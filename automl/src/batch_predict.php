@@ -48,7 +48,7 @@ try {
 
     // set the multiple GCS uri
     $gcsSource = (new GcsSource())
-        ->setInputUri($inputUri);
+        ->setInputUris($inputUri);
     $inputConfig = (new BatchPredictInputConfig())
         ->setGcsSource($gcsSource);
     $gcsDestination = (new GcsDestination())
